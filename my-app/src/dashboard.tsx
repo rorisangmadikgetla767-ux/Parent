@@ -12,10 +12,21 @@ function Dashboard() {
 
     ]
     const totalDemerits = BehaviourData.reduce((sum, entry) => sum + entry.demerits, 0)
+
+    const studentName = 'Rorisang Katleho Madikgetla'
     return (
-        <div>
-            <button onClick={() => setActiveTab('marks')}>Marks</button>
-            <button onClick={() => setActiveTab('behaviour')}>Behaviour</button>
+        <div className="dashboard-container">
+            <h1>Welcome to Parent for {studentName}</h1>
+            <button 
+            className={activeTab === 'marks' ? 'active-tab' : ''} 
+            onClick={() => setActiveTab('marks')}
+            >
+                Marks
+            </button>
+
+            <button 
+            className= {activeTab === 'behaviour' ? 'active-tab' : ''}
+            onClick={() => setActiveTab('behaviour')}>Behaviour</button>
             
             {activeTab === 'marks' &&  (
                 <table>
