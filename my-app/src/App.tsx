@@ -1,8 +1,9 @@
 import './App.css'
-import Dashboard from "./dashboard"
+import Students from "./Students"
+
 
 function App() {
-  return <Dashboard />
+  return <Students />
 
 }
 
