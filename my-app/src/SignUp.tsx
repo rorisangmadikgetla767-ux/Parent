@@ -11,7 +11,7 @@ function SignUp() {
     }
 
     return (
-        <div>
+        <div>      
             <h1>Welcome to Parent. Wire up you account!</h1>
             <input type="email" 
               placeholder="Enter your email address "
