@@ -16,7 +16,7 @@ function Login() {
       // Send the POST request to my FASTAPI backend.
       //JSON.stringify converts the JS object into a JSON string.
 
-      const response = await fetch('http://localhost:8000${endpoint}' {
+      const response = await fetch(`http://localhost:8000${endpoint}`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
