@@ -6,8 +6,30 @@ function Login() {
     const [role, setRole] = useState('')
 
     
-    const handleSubmit = () => {
-        console.log(role, email, password, studentNumber)
+    const handleSubmit = async () => {
+      const endpoint = role === 'teacher' ? '/login':'/login/parent'
+
+      const body = role === 'teacher'
+        ? {email: email, password: password}
+        : {student_number: studentNumber, password: password}
+
+      // Send the POST request to my FASTAPI backend.
+      //JSON.stringify converts the JS object into a JSON string.
+
+      const response = await fetch('http://localhost:8000${endpoint}' {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body)
+      })
+
+      if (!response.ok) {
+        console.log('Login Failed')
+        return
+      }
+
+      const data = await response.json()
+      console.log(data.access_token)
+         
     }
 
     return (
