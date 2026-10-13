@@ -1,0 +1,26 @@
+.login-page[data-theme='light'] {
+    --bg-color: #FAF9F6;
+    --card-color: #FFFFFF;
+    --text-color: #1A1A1A;
+    --accent-color: #1E3A5F;
+}
+
+.login-page[data-theme='dark'] {
+    --bg-color: #1A1A1A;
+    --card-color: #2A2A2A;
+    --text-color: #FAF9F6;
+    --accent-color: #4A7AB5;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+
+.toggleButton{
+    background-color: #1E3A5F;
+    min-height: 60%;
+    

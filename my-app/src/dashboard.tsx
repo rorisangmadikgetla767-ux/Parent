@@ -14,6 +14,10 @@ function Dashboard() {
     const totalDemerits = BehaviourData.reduce((sum, entry) => sum + entry.demerits, 0)
 
     const studentName = 'Rorisang Katleho Madikgetla'
+    const studentsData = [
+        {id:1, name: 'Rorisang', grade: '12'},
+        {id:2, name: 'Katleho', grade: '11'}
+    ]
     return (
         <div className="dashboard-container">
             <h1>Welcome to Parent for {studentName
