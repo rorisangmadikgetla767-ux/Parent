@@ -1,4 +1,5 @@
 import { useState } from "react"
+import logo from './assets/parent-logo.jpeg'
 
 function Dashboard() {
     const [activeTab, setActiveTab] = useState('marks')
@@ -20,6 +21,25 @@ function Dashboard() {
     ]
     return (
         <div className="dashboard-container">
+            
+
+            
+                
+        
+            <nav className="navbar">
+                <img className="nav-logo" src={logo} alt='Parent: connecting schools and families'/>
+                <div className="nav-links">
+
+                    <button>Home</button>
+                    <button>Contact Us</button>
+                    <button>Classes</button>
+                
+                </div>
+
+                <button className="nav-link-button">Log out</button>
+
+            </nav>
+            
             <h1>Welcome to Parent for {studentName
                 
                 }</h1>

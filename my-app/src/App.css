@@ -71,3 +71,68 @@ h1 {
   font-weight: 400;
   margin-bottom: 38px;
 }
+
+.login-logo {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  display: auto;
+  margin: 0 auto 34px;
+}
+
+.register-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.login-input {
+  padding: 14px;
+  border: 1px solid #C9CCC8;
+  border-radius: 30px;
+  font-size: 16px;
+  background-color: #ffffff;
+  color: #1A1A1A;
+
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: #2f5105;
+}
+
+.register-button {
+  background-color: #D9B44C;
+  border-radius: 15px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #F9F9F7;
+  border-bottom: 3px solid #D9B44C;
+}
+
+.nav-logo{
+  height: 48px;
+
+}
+
+.nav-links{
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link-button {
+  background: none;
+  border-color: #D9B44C;
+  border-radius: 8px;
+  background-color: #103C3D;
+  color: #F9F9F7;
+  cursor: pointer;
+
+}
